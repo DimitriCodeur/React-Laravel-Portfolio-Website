@@ -9,15 +9,27 @@ class TopNavigation extends Component {
         super();
         this.state = {
             navBarTitle : "navTitle",
-            navBarLogo : [whiteLogo] // [] Est utilisé pour les objets
+            navBarLogo : [whiteLogo], // [] Est utilisé pour les objets
+            navBarBlack : "navBackground",
+            navBarItem: "navItem"
         }
     }
 
     onScroll = () => {
         if(window.scrollY > 100){
-            this.setState({navBarTitle: "navTitleScroll", navBarLogo: [blackLogo]});
+            this.setState({
+                navBarTitle: "navTitleScroll", 
+                navBarLogo: [blackLogo],
+                navBarBlack: "navBackgroundScroll",
+                navBarItem: "navItemScroll"
+            });
         }else if(window.scrollY < 100){
-            this.setState({navBarTitle: "navTitle", navBarLogo: [whiteLogo]});
+            this.setState({
+                navBarTitle: "navTitle", 
+                navBarLogo: [whiteLogo],
+                navBarBlack: "navBackground",
+                navBarItem: "navItem"
+            });
         }
     }
 
@@ -29,7 +41,7 @@ class TopNavigation extends Component {
     return (
         <Fragment>
 
-            <Navbar fixed='top' bg="dark" expand="lg">
+            <Navbar className={this.state.navBarBlack} fixed='top' expand="lg">
                 <Container>
                     <Navbar.Brand href="#home" className={this.state.navBarTitle}>
                         <img src={this.state.navBarLogo} alt="logo" />
@@ -38,12 +50,12 @@ class TopNavigation extends Component {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto"></Nav>
                         <Nav className="ml-auto">
-                            <Nav.Link href="#home" className='text-uppercase navLink'>Home</Nav.Link>
-                            <Nav.Link href="#link" className='text-uppercase'>About</Nav.Link>
-                            <Nav.Link href="#link" className='text-uppercase'>Service</Nav.Link>
-                            <Nav.Link href="#link" className='text-uppercase'>Course</Nav.Link>
-                            <Nav.Link href="#link" className='text-uppercase'>Portfolio</Nav.Link>
-                            <Nav.Link href="#link" className='text-uppercase'>Contact Us</Nav.Link>
+                            <Nav.Link href="#home" className={this.state.navBarItem}>Home</Nav.Link>
+                            <Nav.Link href="#link" className={this.state.navBarItem}>About</Nav.Link>
+                            <Nav.Link href="#link" className={this.state.navBarItem}>Service</Nav.Link>
+                            <Nav.Link href="#link" className={this.state.navBarItem}>Course</Nav.Link>
+                            <Nav.Link href="#link" className={this.state.navBarItem}>Portfolio</Nav.Link>
+                            <Nav.Link href="#link" className={this.state.navBarItem}>Contact Us</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
