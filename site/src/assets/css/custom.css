@@ -241,3 +241,17 @@
     font-size: 15px;
     text-decoration: none;
 }
+
+/* Video  */
+
+.videoCard{
+    box-shadow: 0 13px 30px -5px; 
+    padding: 8rem 3rem;
+    background: #051b35;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.videoText{
+    margin-top: 2%;
+}
