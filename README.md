@@ -18,5 +18,6 @@ React Video Player "npm install --save video-react react react-dom"
 
 React Slick "npm install react-slick --save" & "npm install slick-carousel"
 
-NB: Please update your nodejs version before to install the package
-NB: React Slick Carousel necessite d'installer les 2 packages
+NB: Please update your nodejs version before to install the package.
+
+NB: React Slick Carousel necessite d'installer les 2 packages.
