@@ -1,5 +1,5 @@
 # React-Laravel-Portfolio-Website
-# rechart Plugin "npm i recharts" or ">npm i recharts --force"
+rechart Plugin "npm i recharts" or "npm i recharts --force"
 # React Bootstrap Package
 # Fontawesome Package, Command bellow :
 # npm i --save @fortawesome/fontawesome-svg-core
