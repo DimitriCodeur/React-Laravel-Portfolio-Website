@@ -5,6 +5,7 @@ import TopBanner from "./assets/components/TopBanner/TopBanner";
 import Services from "./assets/components/Services/Services";
 import TopNavigation from "./assets/components/TopNavigation/TopNavigation";
 import Analysis from "./assets/components/Analysis/Analysis";
+import Summary from "./assets/components/Summary/Summary";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <TopBanner />
       <Services />
       <Analysis />
+      <Summary />
     </div>
   );
 }
