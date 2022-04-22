@@ -4,6 +4,7 @@ import './assets/css/bootstrap.min.css';
 import TopBanner from "./assets/components/TopBanner/TopBanner";
 import Services from "./assets/components/Services/Services";
 import TopNavigation from "./assets/components/TopNavigation/TopNavigation";
+import Analysis from "./assets/components/Analysis/Analysis";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <TopNavigation /> 
       <TopBanner />
       <Services />
+      <Analysis />
     </div>
   );
 }
