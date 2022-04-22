@@ -1,20 +1,23 @@
-import React, { Component, Fragment } from 'react'
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
+import React, { Component, Fragment } from 'react';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import whiteLogo from '../../images/logo_white.png';
+import blackLogo from '../../images/logo_black.png';
 
 class TopNavigation extends Component {
 
     constructor(){
         super();
         this.state = {
-            navBarTitle : "navTitle"
+            navBarTitle : "navTitle",
+            navBarLogo : [whiteLogo] // [] Est utilisé pour les objets
         }
     }
 
     onScroll = () => {
         if(window.scrollY > 100){
-            this.setState({navBarTitle: "navTitleScroll"});
+            this.setState({navBarTitle: "navTitleScroll", navBarLogo: [blackLogo]});
         }else if(window.scrollY < 100){
-            this.setState({navBarTitle: "navTitle"});
+            this.setState({navBarTitle: "navTitle", navBarLogo: [whiteLogo]});
         }
     }
 
@@ -28,7 +31,9 @@ class TopNavigation extends Component {
 
             <Navbar fixed='top' bg="dark" expand="lg">
                 <Container>
-                    <Navbar.Brand href="#home" className={this.state.navBarTitle}>Easy Learning</Navbar.Brand>
+                    <Navbar.Brand href="#home" className={this.state.navBarTitle}>
+                        <img src={this.state.navBarLogo} alt="logo" />
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto"></Nav>
