@@ -5,3 +5,5 @@
 # npm i --save @fortawesome/fontawesome-svg-core
 # npm install --save @fortawesome/free-solid-svg-icons
 # npm install --save @fortawesome/react-fontawesome
+# react countup "npm install react-countup --save"
+# react Visibility Sensor "npm install react-visibility-sensor"
