@@ -9,6 +9,7 @@ import Summary from "./assets/components/Summary/Summary";
 import RecentProject from "./assets/components/RecentProject/RecentProject";
 import Course from "./assets/components/Course/Course";
 import Video from "./assets/components/Video/Video";
+import ClientReview from "./assets/components/ClientReview/ClientReview";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <RecentProject />
       <Course />
       <Video />
+      <ClientReview />
     </div>
   );
 }
