@@ -6,6 +6,8 @@ import Services from "./assets/components/Services/Services";
 import TopNavigation from "./assets/components/TopNavigation/TopNavigation";
 import Analysis from "./assets/components/Analysis/Analysis";
 import Summary from "./assets/components/Summary/Summary";
+import RecentProject from "./assets/components/RecentProject/RecentProject";
+import Course from "./assets/components/Course/Course";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Services />
       <Analysis />
       <Summary />
+      <RecentProject />
+      <Course />
     </div>
   );
 }

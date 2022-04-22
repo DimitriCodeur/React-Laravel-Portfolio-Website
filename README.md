@@ -1,9 +1,9 @@
 # React-Laravel-Portfolio-Website
 rechart Plugin "npm i recharts" or "npm i recharts --force"
-# React Bootstrap Package
-# Fontawesome Package, Command bellow :
-# npm i --save @fortawesome/fontawesome-svg-core
-# npm install --save @fortawesome/free-solid-svg-icons
-# npm install --save @fortawesome/react-fontawesome
-# react countup "npm install react-countup --save"
-# react Visibility Sensor "npm install react-visibility-sensor"
+React Bootstrap Package
+# Fontawesome Package, See command bellow
+npm i --save @fortawesome/fontawesome-svg-core
+npm install --save @fortawesome/free-solid-svg-icons
+npm install --save @fortawesome/react-fontawesome
+react countup "npm install react-countup --save"
+react Visibility Sensor "npm install react-visibility-sensor"
