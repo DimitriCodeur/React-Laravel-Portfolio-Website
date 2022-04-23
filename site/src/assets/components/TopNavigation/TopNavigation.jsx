@@ -11,7 +11,8 @@ class TopNavigation extends Component {
             navBarTitle : "navTitle",
             navBarLogo : [whiteLogo], // [] Est utilisé pour les objets
             navBarBlack : "navBackground",
-            navBarItem: "navItem"
+            navBarItem: "navItem",
+            navVariant: "dark"
         }
     }
 
@@ -21,14 +22,16 @@ class TopNavigation extends Component {
                 navBarTitle: "navTitleScroll", 
                 navBarLogo: [blackLogo],
                 navBarBlack: "navBackgroundScroll",
-                navBarItem: "navItemScroll"
+                navBarItem: "navItemScroll",
+                navVariant: "light"
             });
         }else if(window.scrollY < 100){
             this.setState({
                 navBarTitle: "navTitle", 
                 navBarLogo: [whiteLogo],
                 navBarBlack: "navBackground",
-                navBarItem: "navItem"
+                navBarItem: "navItem",
+                navVariant: "dark"
             });
         }
     }
@@ -41,7 +44,7 @@ class TopNavigation extends Component {
     return (
         <Fragment>
 
-            <Navbar className={this.state.navBarBlack} fixed='top' expand="lg">
+            <Navbar className={this.state.navBarBlack} fixed='top' expand="lg" variant={this.state.navVariant}>
                 <Container>
                     <Navbar.Brand href="#home" className={this.state.navBarTitle}>
                         <img src={this.state.navBarLogo} alt="logo" />
