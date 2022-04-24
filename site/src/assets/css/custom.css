@@ -126,13 +126,14 @@
     -o-transition: -color 400ms linear;
     transition: background-color 400ms linear;
     background-color: #fff;
+    box-shadow: 0 0 8px rgb(0, 115, 23, .3);
 }
 
 .navItem{
     text-decoration: none !important;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    color: #fff !important;
+    color: #fff;
     font-weight: 700;
     font-size: 16px;
 }
@@ -144,6 +145,10 @@
     color: #000 !important;
     font-weight: 700;
     font-size: 16px;
+}
+
+.active{
+    color: #ffd900;
 }
 
 /* Summary  */
@@ -210,6 +215,16 @@
 .iconProject{
     color: #fff;
     font-size: 40px;
+}
+
+.link-style{
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.link-style:hover{
+    color: #fff !important;
+    text-decoration: none;
 }
 
 /* Recent Projects  */
@@ -452,4 +467,161 @@ a.twitter{
     font-weight: 700;
     color: #ffd900;
     font-size: 48px;
+}
+
+/* Project Details Page  */
+
+.after-shape {
+    position: relative;
+    margin-right: 30px;
+}
+
+.about-thumb-wrap.after-shape::after {
+    content: "";
+    position: absolute;
+    height: 80%;
+    right: 30px;
+    width: 154px;
+    top: 50%;
+    border-radius: 10px;
+    background-color: #ffd900;
+    z-index: -1;
+    transform: translateY(-50%);
+}
+
+.detailsTitle {
+    color: #051b35;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.detailsText {
+    color: #817e7e;
+    margin-top: 1rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    width: 90%;
+}
+
+/* Course Details Img  */
+.courseDetailsTitle {
+    color: #051b35;
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.courseDetailsImg {
+    width: 100%;
+}
+
+.courseDescription {
+    color: #817e7e;
+    margin-top: 1rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+}   
+
+.widget-feature {
+    border: 1px solid #cbd6e2;
+}
+
+.widget-title {
+    color: #051b35;
+    font-size: 22px;
+    position: relative;
+    padding: 18px 25px;
+    border-bottom: 1px solid #F0F4F9;
+    margin-bottom: 18px !important;
+    font-weight: 700;
+}
+
+.widget-feature ul {
+    padding: 0 25px 20px !important;
+}
+
+.widget-feature ul li {
+    font-size: 16px;
+    margin-bottom: 9px;
+    list-style: none;
+}
+
+.widget-feature ul li span {
+    font-family: "Montserrat", sans-serif;
+    color: #051b35;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.iconCourse {
+    color: #051b35 !important;
+    margin-right: 8px;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.widget-feature .price-wrap {
+    background-color: #F0F4F9;
+    padding: 34px 23px 40px;
+} 
+
+.text-center {
+    text-align: center!important;
+}
+
+.widget-feature .price-wrap h5 {
+    font-family: "Montserrat", sans-serif;
+    color: #051b35 !important;
+    font-size: 22px;
+    margin-bottom: 28px;
+    font-weight: 700;
+    line-height: 1.3380952381;
+    display: block;
+}
+
+.widget-feature .price-wrap .btn {
+    width: 100% !important;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer !important;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    height: 55px !important;
+    line-height: 55px !important;
+    padding: 0 36px !important;
+    border-radius: 0 !important;
+    overflow: hidden !important;
+    position: relative !important;
+    border: 0 !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    transition: all 0.5s ease !important;
+    z-index: 0 !important;
+}
+
+.btn-base {
+    color: #051b35 !important;
+    background: #FDC800 !important;
+}
+
+.btn-base:hover {
+    color: #002147 !important;
+    opacity: .85;
+}
+
+.btn-radius {
+    border-radius: 30px !important;
 }

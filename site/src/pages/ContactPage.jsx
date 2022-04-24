@@ -5,10 +5,15 @@ import Footer from "../components/Footer/Footer";
 import ContactSec from '../components/ContactSec/ContactSec';
 
 class ContactPage extends Component {
+
+    componentDidMount(){
+        window.scroll(0,0)
+    }
+    
     render() {
         return (
             <Fragment>
-                <TopNavigation /> 
+                <TopNavigation title="Contact Us" /> 
                 <PageTop pagetitle="Contact Us" />
                 <ContactSec />
                 <Footer />

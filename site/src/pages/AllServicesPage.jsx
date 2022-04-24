@@ -6,10 +6,15 @@ import Services from "../components/Services/Services";
 import ContactSec from '../components/ContactSec/ContactSec';
 
 class AllServicesPage extends Component {
+
+    componentDidMount(){
+        window.scroll(0,0)
+    }
+    
     render() {
         return (
             <Fragment>
-                <TopNavigation /> 
+                <TopNavigation title="All Services" /> 
                 <PageTop pagetitle="Our Services" />
                 <Services />
                 <ContactSec />

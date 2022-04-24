@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 class Course extends Component {
   render() {
@@ -22,7 +23,7 @@ class Course extends Component {
                             <Col lg={6} md={6} sm={12}>
                                 <h5 className='serviceName' style={{textAlign:"justify"}}>Laravel 8</h5>
                                 <p className='serviceDescription' style={{textAlign:"justify"}}>In This Course, You Will Build Three Different Project With Laravel 8 Include Advance Professional Ecommerce Site A-Z</p>
-                                <a href="#" className='courseViewMore' style={{float:"left"}}>View Details</a>
+                                <Link to="/coursedetails" className='courseViewMore' style={{float:"left"}}>View Details</Link>
                             </Col>
 
                         </Row>
@@ -38,7 +39,7 @@ class Course extends Component {
                             <Col lg={6} md={6} sm={12}>
                             <h5 className='serviceName' style={{textAlign:"justify"}}>ReactJs With Laravel </h5>
                                 <p className='serviceDescription' style={{textAlign:"justify"}}>Learn React.js for Frontend and Use Laravel for Backend. Become Full Stack Web Developer By Build Complete Project</p>
-                                <a href="#" className='courseViewMore' style={{float:"left"}}>View Details</a>
+                               <Link to="/coursedetails" className='courseViewMore' style={{float:"left"}}>View Details</Link>
                             </Col>
 
                         </Row>
@@ -54,7 +55,7 @@ class Course extends Component {
                             <Col lg={6} md={6} sm={12}>
                             <h5 className='serviceName' style={{textAlign:"justify"}}>The Ultimate SEO Training </h5>
                                 <p className='serviceDescription' style={{textAlign:"justify"}}>SEO Training From An SEO Agency Owner: Step By Step Process To Rank #1 on Google. Keyword Research, Technical SEO & More</p>
-                                <a href="#" className='courseViewMore' style={{float:"left"}}>View Details</a>
+                               <Link to="/coursedetails" className='courseViewMore' style={{float:"left"}}>View Details</Link>
                             </Col>
 
                         </Row>
@@ -70,7 +71,7 @@ class Course extends Component {
                             <Col lg={6} md={6} sm={12}>
                             <h5 className='serviceName' style={{textAlign:"justify"}}>Web Design</h5>
                                 <p className='serviceDescription' style={{textAlign:"justify"}}>Become a Designer in 2022! Master Mobile and Web Design, User Interface + User Experience (UI/UX Design), HTML, and CSS</p>
-                                <a href="#" className='courseViewMore' style={{float:"left"}}>View Details</a>
+                                <Link to="/coursedetails" className='courseViewMore' style={{float:"left"}}>View Details</Link>
                             </Col>
 
                         </Row>

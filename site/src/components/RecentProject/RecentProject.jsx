@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Course1 from "../../assets/images/page1.png";
 import Course2 from "../../assets/images/page2.png";
 import Course3 from "../../assets/images/page3.png";
@@ -24,7 +25,9 @@ class RecentProject extends Component {
                                 Some quick example text to build on the card title and make up the bulk of
                                 the card's content.
                                 </Card.Text>
-                                <Button variant="primary">Visit WebSite</Button>
+                                <Button>
+                                    <Link to="projectdetails" className='link-style' variant="primary">Visit More</Link>
+                                </Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -38,7 +41,9 @@ class RecentProject extends Component {
                                 Some quick example text to build on the card title and make up the bulk of
                                 the card's content.
                                 </Card.Text>
-                                <Button variant="primary">Visit WebSite</Button>
+                                <Button>
+                                    <Link to="projectdetails" className='link-style' variant="primary">Visit More</Link>
+                                </Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -49,15 +54,18 @@ class RecentProject extends Component {
                             <Card.Body>
                                 <Card.Title class="serviceName">Project Name 3</Card.Title>
                                 <Card.Text className="serviceDescription">
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
+                                    Some quick example text to build on the card title and make up the bulk of
+                                    the card's content.
                                 </Card.Text>
-                                <Button variant="primary">Visit WebSite</Button>
+                                <Button>
+                                    <Link to="projectdetails" className='link-style' variant="primary">Visit More</Link>
+                                </Button>
                             </Card.Body>
                         </Card>
                     </Col>
 
                 </Row>
+
             </Container>
         </Fragment>
     )

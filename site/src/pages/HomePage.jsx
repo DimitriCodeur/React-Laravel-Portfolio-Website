@@ -12,10 +12,15 @@ import AboutMe from "../components/AboutMe/AboutMe";
 import Footer from "../components/Footer/Footer";
 
 class HomePage extends Component {
+
+    componentDidMount(){
+        window.scroll(0,0)
+    }
+    
     render() {
         return (
             <Fragment>
-                <TopNavigation /> 
+                <TopNavigation title="Hight Technology" /> 
                 <TopBanner />
                 <Services />
                 <Analysis />

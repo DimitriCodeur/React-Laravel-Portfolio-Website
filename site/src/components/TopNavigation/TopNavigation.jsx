@@ -6,14 +6,15 @@ import { NavLink } from 'react-router-dom';
 
 class TopNavigation extends Component {
 
-    constructor(){
+    constructor(props){
         super();
         this.state = {
             navBarTitle : "navTitle",
             navBarLogo : [whiteLogo], // [] Est utilisé pour les objets
             navBarBlack : "navBackground",
             navBarItem: "navItem",
-            navVariant: "dark"
+            navVariant: "dark",
+            pagetitle: props.title
         }
     }
 
@@ -42,51 +43,53 @@ class TopNavigation extends Component {
     }
 
     render() {
-    return (
-        <Fragment>
+        return (
+            <Fragment>
+                <title>{this.state.pagetitle}</title>
+                <Navbar className={this.state.navBarBlack} fixed='top' expand="lg" variant={this.state.navVariant}>
+                    <Container>
+                        <Navbar.Brand className={this.state.navBarTitle}>
+                            <NavLink to="/"> 
+                                <img src={this.state.navBarLogo} alt="NavBar logo" />
+                            </NavLink>
+                        </Navbar.Brand>
+                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                        <Navbar.Collapse id="basic-navbar-nav">
+                            <Nav className="me-auto"></Nav>
+                            <Nav className="ml-a uto">
 
-            <Navbar className={this.state.navBarBlack} fixed='top' expand="lg" variant={this.state.navVariant}>
-                <Container>
-                    <Navbar.Brand href="#home" className={this.state.navBarTitle}>
-                        <img src={this.state.navBarLogo} alt="logo" />
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto"></Nav>
-                        <Nav className="ml-auto">
+                                <Nav.Link>
+                                    <NavLink to="/" activeClassName="active" className={this.state.navBarItem}>Home</NavLink>
+                                </Nav.Link>
 
-                            <Nav.Link>
-                                <NavLink to="/" className={this.state.navBarItem}>Home</NavLink>
-                            </Nav.Link>
+                                <Nav.Link>
+                                    <NavLink to="/about" activeClassName="active" className={this.state.navBarItem}>About</NavLink>
+                                </Nav.Link>
 
-                            <Nav.Link>
-                                <NavLink to="/about" className={this.state.navBarItem}>About</NavLink>
-                            </Nav.Link>
+                                <Nav.Link>
+                                    <NavLink to="/service" activeClassName="active" className={this.state.navBarItem}>Service</NavLink>
+                                </Nav.Link>
 
-                            <Nav.Link>
-                                <NavLink to="/service" className={this.state.navBarItem}>Service</NavLink>
-                            </Nav.Link>
+                                <Nav.Link>
+                                    <NavLink to="/course" activeClassName="active" className={this.state.navBarItem}>Course</NavLink>
+                                </Nav.Link>
 
-                            <Nav.Link>
-                                <NavLink to="/course" className={this.state.navBarItem}>Course</NavLink>
-                            </Nav.Link>
+                                <Nav.Link>
+                                    <NavLink to="/portfolio" activeClassName="active" className={this.state.navBarItem}>Portfolio</NavLink>
+                                </Nav.Link>
+                                
+                                <Nav.Link>
+                                    <NavLink to="/contact" activeClassName="active" className={this.state.navBarItem}>Contact Us</NavLink>
+                                </Nav.Link>
+                                
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Container>
+                </Navbar>
 
-                            <Nav.Link>
-                                <NavLink to="/portfolio" className={this.state.navBarItem}>Portfolio</NavLink>
-                            </Nav.Link>
-                            
-                            <Nav.Link>
-                                <NavLink to="/contact" className={this.state.navBarItem}>Contact Us</NavLink>
-                            </Nav.Link>
-                            
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
-
-        </Fragment>
-    )
-  }
+            </Fragment>
+        )
+    }
 }
 
 export default TopNavigation

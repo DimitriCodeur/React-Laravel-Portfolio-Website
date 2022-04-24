@@ -2,24 +2,23 @@ import React, { Component, Fragment } from 'react';
 import TopNavigation from "../components/TopNavigation/TopNavigation";
 import PageTop from '../components/PageTop/PageTop';
 import Footer from "../components/Footer/Footer";
-import AllProjects from '../components/AllProjects/AllProjects';
+import PrivacyDescription from "../components/PrivacyDescription/PrivacyDescription";
 
-export class PortfolioPage extends Component {
+class PrivacyPage extends Component {
 
   componentDidMount(){
-    window.scroll(0,0)
+      window.scroll(0,0)
   }
-
   render() {
     return (
         <Fragment>
-            <TopNavigation title="Our Portfolio" /> 
-            <PageTop pagetitle="Our Portfolio" />
-            <AllProjects />
+            <TopNavigation title="Privacy And Policy" /> 
+            <PageTop pagetitle="Privacy And Policy" />
+            <PrivacyDescription />
             <Footer />
         </Fragment>
     )
   }
 }
 
-export default PortfolioPage
+export default PrivacyPage
