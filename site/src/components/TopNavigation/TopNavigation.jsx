@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import whiteLogo from '../../images/logo_white.png';
-import blackLogo from '../../images/logo_black.png';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import whiteLogo from '../../assets/images/logo_white.png';
+import blackLogo from '../../assets/images/logo_black.png';
+import { NavLink } from 'react-router-dom';
 
 class TopNavigation extends Component {
 
@@ -53,12 +54,31 @@ class TopNavigation extends Component {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto"></Nav>
                         <Nav className="ml-auto">
-                            <Nav.Link href="#home" className={this.state.navBarItem}>Home</Nav.Link>
-                            <Nav.Link href="#link" className={this.state.navBarItem}>About</Nav.Link>
-                            <Nav.Link href="#link" className={this.state.navBarItem}>Service</Nav.Link>
-                            <Nav.Link href="#link" className={this.state.navBarItem}>Course</Nav.Link>
-                            <Nav.Link href="#link" className={this.state.navBarItem}>Portfolio</Nav.Link>
-                            <Nav.Link href="#link" className={this.state.navBarItem}>Contact Us</Nav.Link>
+
+                            <Nav.Link>
+                                <NavLink to="/" className={this.state.navBarItem}>Home</NavLink>
+                            </Nav.Link>
+
+                            <Nav.Link>
+                                <NavLink to="/about" className={this.state.navBarItem}>About</NavLink>
+                            </Nav.Link>
+
+                            <Nav.Link>
+                                <NavLink to="/service" className={this.state.navBarItem}>Service</NavLink>
+                            </Nav.Link>
+
+                            <Nav.Link>
+                                <NavLink to="/course" className={this.state.navBarItem}>Course</NavLink>
+                            </Nav.Link>
+
+                            <Nav.Link>
+                                <NavLink to="/portfolio" className={this.state.navBarItem}>Portfolio</NavLink>
+                            </Nav.Link>
+                            
+                            <Nav.Link>
+                                <NavLink to="/contact" className={this.state.navBarItem}>Contact Us</NavLink>
+                            </Nav.Link>
+                            
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

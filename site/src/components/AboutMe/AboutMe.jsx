@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import FaceImg from '../../images/face.png';
+import FaceImg from '../../assets/images/face.png';
 import Typed from 'react-typed';
 
 class AboutMe extends Component {

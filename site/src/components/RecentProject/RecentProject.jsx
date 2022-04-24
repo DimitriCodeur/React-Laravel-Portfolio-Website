@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
-import Course1 from "../../images/page1.png";
-import Course2 from "../../images/page2.png";
-import Course3 from "../../images/page3.png";
+import Course1 from "../../assets/images/page1.png";
+import Course2 from "../../assets/images/page2.png";
+import Course3 from "../../assets/images/page3.png";
 
 class RecentProject extends Component {
   render() {
