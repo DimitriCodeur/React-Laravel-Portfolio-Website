@@ -2,7 +2,7 @@ class AppUrl {
     
     static BaseUrl = 'http://127.0.0.1:8000/api';
 
-    static HomePageTitle = this.BaseUrl+'/homepage/title';
+    static HomeTopTitle = this.BaseUrl+'/homepage/title';
     static HomeTechDesc = this.BaseUrl+'/techhome';
     static TotalHomeDetails = this.BaseUrl+'/totalhome';
     static HomeVideo = this.BaseUrl+'/home/video';
